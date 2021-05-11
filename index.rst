@@ -11,6 +11,7 @@ Welcome to github guide's documentation!
    :caption: Contents:
 
    docs/chapter1.md
+   docs/chapter2.md
 
 
 
