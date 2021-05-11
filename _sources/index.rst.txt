@@ -10,6 +10,8 @@ Welcome to github guide's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   docs/chapter1.md
+
 
 
 Indices and tables
