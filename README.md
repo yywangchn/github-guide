@@ -1,3 +1,3 @@
 GitHub Pages of [hellojukay/github-guide](https://github.com/hellojukay/github-guide.git)
 ===
-Sphinx html documentation of [beefd5c9](https://github.com/hellojukay/github-guide/tree/beefd5c9ca1df6c7a5cb39ee6bb047fbfe948380)
+Sphinx html documentation of [28fa67d9](https://github.com/hellojukay/github-guide/tree/28fa67d9377f47396863140e88b85e537cf0e834)
