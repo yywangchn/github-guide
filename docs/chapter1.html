@@ -56,6 +56,48 @@
 </div>
 <p>国内领先的git代码托管平台，主要优势在于国内访问速度快，有一些符合国情的便捷功能。</p>
 </section>
+<section id="id1">
+<h2>代理加速<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>一些同学可能因为网速原因，访问 github 速度会比较慢，不管是 git clone 还是访问页面，这里我们提供几种加速的方法</p>
+<section id="clone">
+<h3>clone 加速技巧<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h3>
+<section id="id2">
+<h4>终端全局加速<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p>可以在终端配置 https 的代理</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.0</span><span class="p">:</span><span class="mi">8080</span>
+<span class="n">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.0</span><span class="p">:</span><span class="mi">8080</span>
+</pre></div>
+</div>
+<p>或者配置 socks5 协议的代理</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">https_proxy</span><span class="o">=</span><span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8080</span>
+<span class="n">export</span> <span class="n">http_proxy</span><span class="o">=</span><span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">8080</span>
+</pre></div>
+</div>
+<p>如果某些网址不需要代理，也可以配置 no_proxy</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">export</span> <span class="n">no_peoxy</span><span class="o">=</span><span class="mf">127.0.0.1</span><span class="p">,</span><span class="n">baidu</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</section>
+<section id="git">
+<h4>git 命令单独加速<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h4>
+<p>配置 socks5 协议的代理，对于所有网址都有效</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">http</span><span class="o">.</span><span class="n">proxy</span> <span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">1080</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">https</span><span class="o">.</span><span class="n">proxy</span> <span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">1080</span>
+</pre></div>
+</div>
+<p>如果需要取消代理，可以执行如下命令</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">unset</span> <span class="n">http</span><span class="o">.</span><span class="n">proxy</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="o">--</span><span class="n">unset</span> <span class="n">https</span><span class="o">.</span><span class="n">proxy</span>
+</pre></div>
+</div>
+<p>如果只需要对 github 代理</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">http</span><span class="o">.</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">.</span><span class="n">proxy</span> <span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">1080</span>
+<span class="n">git</span> <span class="n">config</span> <span class="o">--</span><span class="k">global</span> <span class="n">https</span><span class="o">.</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">.</span><span class="n">proxy</span> <span class="n">socks5</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">1080</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
 </section>
 
 
@@ -80,6 +122,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">什么是 github</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#gitlab">gitlab</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#gitee">gitee</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">代理加速</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">github 工作流</a></li>
