@@ -12,7 +12,7 @@ Welcome to github guide's documentation!
 
    docs/chapter1.md
    docs/chapter2.md
-
+   docs/chapter3.md
 
 
 Indices and tables
