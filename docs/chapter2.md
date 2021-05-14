@@ -28,6 +28,11 @@
 * 项目负责人合并了你的代码
 
 ### Fork
+这里是 fork 的按钮，点击按钮 fork 代码
+![fork1](images/fork1.png)
+
+我们点击 fork 以后代码就被复制一份到我们的工作空间了
+![fork2](images/fork2.png)
 
 ### Pull requests
 
