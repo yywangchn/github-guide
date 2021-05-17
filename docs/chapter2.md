@@ -36,6 +36,12 @@ https://www.cnblogs.com/suwanbin/p/12113751.html
 ![folow](images/follow.png)
 ![star](images/star.png)
 ![event](images/event.png)
+## 趋势
+github 提供了一个 trending 页面，展示最近比较流行的项目和活跃的开发者，关注这个页面我们能了解业界的技术发展趋势
+```
+https://github.com/trending
+```
+
 # 贡献代码
 大家都是如何基于 github 运作开源项目的,我们如何向开源项目共享代码。大概经历如下几个步骤：
 
