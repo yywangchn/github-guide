@@ -15,5 +15,10 @@ github 提供了一个免费的网页托管功能，帮助开发展示自己的�
 ```
 https://github.com/hellojukay/github-guide/actions
 ```
-
-
+```yaml
+4 directories, 18 files
+hellojukay@local github-guide (main) $ tree .github/
+.github/
+└── workflows
+    └── gh-pages.yml
+```
