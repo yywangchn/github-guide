@@ -2,7 +2,7 @@
 GitHub 于2018年10月推出了持续集成功能 `GitHub Actions`，使用 yaml 格式的语法配置.可以参考软老师的博客
 ```
 https://www.ruanyifeng.com/blog/2019/09/getting-started-with-github-actions.html
-
+```
 ## github pages
 github 提供了一个免费的网页托管功能，帮助开发展示自己的项目和文档，这项功能我们干许多有意思的事情
 
