@@ -54,3 +54,20 @@ git config --global --unset https.proxy
 git config --global http.https://github.com.proxy socks5://127.0.0.1:1080
 git config --global https.https://github.com.proxy socks5://127.0.0.1:1080
 ```
+
+#### 其他加速技巧
+如果说上面的代理设置还比较麻烦，我们可以在 bashrc 里面创建我们自己的代理命令,这样不会污染我们的 git 配置和 shell 环境变量
+```bash
+# 通过代理的方式执行某个命令
+with_proxy(){
+    https_proxy=http://127.0.0.1:7890  http_proxy=http://127.0.0.1:7890 "$@"
+}
+```
+如果我们需要通过代理来执行某个命令，比如
+```
+with_proxy git clone
+```
+或者说
+```
+with_proxy wget https//xxxx.xxx/openjdk.zip
+```
