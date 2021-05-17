@@ -35,4 +35,5 @@
 ![fork2](images/fork2.png)
 
 ### Pull requests
-
+我们将自己编写的代码，请求合并到开源项目，可以发起 `Pull requests`
+![pr](images/pr.png)
