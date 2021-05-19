@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>github 工作流 &#8212; github guide  documentation</title>
+    <title>git 工作流程 &#8212; github guide  documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
@@ -33,13 +33,31 @@
 
           <div class="body" role="main">
             
-  <section id="github">
-<h1>github 工作流<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h1>
+  <section id="git">
+<h1>git 工作流程<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
+<p>git 里面我们一般会创建几种分支</p>
+<ol class="simple">
+<li><p>master</p></li>
+<li><p>develop</p></li>
+<li><p>feature</p></li>
+<li><p>release</p></li>
+<li><p>hotfix</p></li>
+</ol>
+<p>分别对应:</p>
+<ol class="simple">
+<li><p>稳定版本</p></li>
+<li><p>开发联调</p></li>
+<li><p>功能开发</p></li>
+<li><p>测试，预发布</p></li>
+<li><p>修复 bug</p></li>
+</ol>
+<p>流转图如下：
+<img alt="gitflow" src="../_images/gitflow.png" /></p>
 </section>
+<section id="github">
+<h1>github 工作流<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h1>
 <section id="id1">
-<h1>使用项目<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<section id="id2">
-<h2>快速找到项目<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>快速找到项目<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>除了常规的关键字搜索，github 还支持一些搜索指令，能帮助我们精准实现搜索，参考：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">cnblogs</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">suwanbin</span><span class="o">/</span><span class="n">p</span><span class="o">/</span><span class="mf">12113751.</span><span class="n">html</span>
 </pre></div>
@@ -51,15 +69,15 @@
 <li><p>同事,同学</p></li>
 </ul>
 </section>
-<section id="id3">
-<h2>项目文档<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<section id="id2">
+<h2>项目文档<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>很多的开源项目都会有文档页面，有的可能是 github 上的 wiki 页，有的可能是一个单独的网址，如果是一个单独的网址，一般在项目中会标注网址。
 <img alt="wiki" src="../_images/wiki.png" /></p>
 <p>还有的项目会提供一些示例的代码或者用法</p>
 <p><img alt="example" src="../_images/example.png" /></p>
 </section>
-<section id="id4">
-<h2>解决问题<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<section id="id3">
+<h2>解决问题<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>我们想要了解一个开源项目的特定用法，或者一个问题的解决方法，这个时候我们有如下几种途径：</p>
 <ol class="simple">
 <li><p>github 查看项目文档，issue</p></li>
@@ -68,23 +86,23 @@
 </ol>
 <p>我们优先查看项目的文档，很多时候就是因为看文档不仔细，甚至没有看文档，导致我们自己理解有问题，或者使用错误，最后花时间来排查，解决这些错误，其实非常不应该。在遇到文档无法找到答案的时候，我们可以上网搜索解决方案，如果还找不到问题，我们则要有勇气去翻阅那些海量的代码。</p>
 </section>
-<section id="id5">
-<h2>关注进展<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<section id="id4">
+<h2>关注进展<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>在 github 上，我们可以 follow 一些开发者和项目，我们关注一些项目以后，这个项目的相关事件就会在我们的首页出现
 <img alt="folow" src="../_images/follow.png" />
 <img alt="star" src="../_images/star.png" />
 <img alt="event" src="../_images/event.png" /></p>
 </section>
-<section id="id6">
-<h2>趋势<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<section id="id5">
+<h2>趋势<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>github 提供了一个 trending 页面，展示最近比较流行的项目和活跃的开发者，关注这个页面我们能了解业界的技术发展趋势</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">trending</span>
 </pre></div>
 </div>
 </section>
 </section>
-<section id="id7">
-<h1>贡献代码<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h1>
+<section id="id6">
+<h1>贡献代码<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
 <p>大家都是如何基于 github 运作开源项目的,我们如何向开源项目共享代码。大概经历如下几个步骤：</p>
 <ul class="simple">
 <li><p>因为某某原因，你需要向某个仓库</p></li>
@@ -129,16 +147,16 @@
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">什么是 github</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">github 工作流</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#id1">使用项目</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">快速找到项目</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">项目文档</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4">解决问题</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5">关注进展</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">趋势</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">git 工作流程</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#github">github 工作流</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">快速找到项目</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">项目文档</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">解决问题</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">关注进展</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">趋势</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#id7">贡献代码</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="#id6">贡献代码</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#fork">Fork</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pull-requests">Pull requests</a></li>
 </ul>

@@ -1,6 +1,24 @@
+# git 工作流程
+git 里面我们一般会创建几种分支
+
+1. master
+2. develop
+3. feature
+4. release
+5. hotfix
+
+分别对应:
+
+1. 稳定版本
+2. 开发联调
+3. 功能开发
+4. 测试，预发布
+5. 修复 bug
+
+流转图如下：
+![gitflow](images/gitflow.png)
 # github 工作流
 
-# 使用项目
 ## 快速找到项目
 除了常规的关键字搜索，github 还支持一些搜索指令，能帮助我们精准实现搜索，参考：
 ```
