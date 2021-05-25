@@ -48,7 +48,7 @@ export http_proxy=socks5://127.0.0.1:8080
 如果某些网址不需要代理，也可以配置 no_proxy
 ```
 # windows 不适用
-export no_peoxy=127.0.0.1,baidu.com
+export no_proxy=127.0.0.1,baidu.com
 ```
 #### git 命令单独加速
 配置 socks5 协议的代理，对于所有网址都有效
